@@ -1,0 +1,352 @@
+@import "leaflet/dist/leaflet.css";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0f;
+  --foreground: #f8fafc;
+  --fg: #f0cfa0;
+  --fg-dim: rgba(240, 207, 160, 0.55);
+  --fg-hud: rgba(240, 207, 160, 0.7);
+  --fg-dot: rgba(240, 207, 160, 0.3);
+  --fg-dotact: rgba(240, 207, 160, 0.9);
+  --bg: #0a0a0f;
+  --accent: #a0b4ff;
+  --scrim: 0.18;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--foreground);
+  font-family: 'Plus Jakarta Sans', var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.012em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Space Grotesk & Space Mono Typography */
+.font-space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.font-space-mono {
+  font-family: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+/* Cinematic Full Ocean View Mode */
+body.cinematic-mode main,
+body.cinematic-mode header,
+body.cinematic-mode nav {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.4s ease;
+}
+
+/* Leaflet Container & Dark Mode styling */
+.leaflet-container {
+  background: #020617 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 480px !important;
+  border-radius: 0.75rem;
+}
+
+/* Tactical Dark Cyber-Theme Filter on OpenStreetMap Tiles */
+.leaflet-tile-pane {
+  filter: brightness(0.65) invert(1) contrast(2.6) hue-rotate(205deg) saturate(0.25);
+}
+
+/* 3D Perspective Tilt on Map Canvas */
+.perspective-3d {
+  transform: perspective(1000px) rotateX(14deg);
+  transform-origin: center center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+}
+
+/* MapLibre / Mapbox NavigationControl Responsive Bottom Offset (Clears Bottom Alert Ticker) */
+.maplibregl-ctrl-bottom-right,
+.mapboxgl-ctrl-bottom-right {
+  margin-bottom: 48px !important;
+  margin-right: 10px !important;
+}
+
+@media (min-width: 640px) {
+  .maplibregl-ctrl-bottom-right,
+  .mapboxgl-ctrl-bottom-right {
+    margin-bottom: 42px !important;
+    margin-right: 14px !important;
+  }
+}
+
+/* Custom Pulsing Markers */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* Zero-CPU Compositor-driven Radar Progress Animation */
+@keyframes radarProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Zero-CPU Compositor-driven Radar Conic Sweep Animation */
+@keyframes radarSweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ==========================================================================
+   Glass / Frosted / Acrylic Design System
+   ========================================================================== */
+
+.glass-panel {
+  background: rgba(15, 23, 42, 0.32) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.65), inset 0 -1.5px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.045) !important;
+  backdrop-filter: blur(18px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1.2px 1.5px 0 rgba(255, 255, 255, 0.4) !important;
+}
+
+.glass-modal {
+  background: rgba(10, 15, 30, 0.55) !important;
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.26) !important;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.65) !important;
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), inset 0 1.2px 1.5px rgba(255, 255, 255, 0.45) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35), inset 0 1.5px 2px rgba(255, 255, 255, 0.65) !important;
+  transform: translateY(-1px);
+}
+
+.glass-button:active {
+  transform: translateY(0px);
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+.glass-button-primary {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.36) 0%, rgba(59, 130, 246, 0.25) 100%) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(6, 182, 212, 0.55) !important;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3), inset 0 1.2px 1.5px rgba(255, 255, 255, 0.5) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.glass-button-primary:hover {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.52) 0%, rgba(59, 130, 246, 0.38) 100%) !important;
+  border-color: rgba(6, 182, 212, 0.75) !important;
+  box-shadow: 0 6px 25px rgba(6, 182, 212, 0.45), inset 0 1.5px 2px rgba(255, 255, 255, 0.7) !important;
+  transform: translateY(-1px);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease !important;
+}
+
+.glass-input:focus {
+  border-color: rgba(6, 182, 212, 0.55) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3), inset 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* ── Mobile GPU/Compositing Optimizations (<=768px Viewports) ─────────────────
+   Tuned blur radius and streamlined box-shadows to cut mobile GPU sampling
+   kernel overhead by ~50% during scrolling while preserving authentic frosted acrylic aesthetics. */
+@media (max-width: 768px) {
+  .glass-panel {
+    backdrop-filter: blur(10px) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(10px) saturate(150%) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .glass-panel-subtle {
+    backdrop-filter: blur(8px) saturate(140%) !important;
+    -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 1px 0 rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .glass-modal {
+    backdrop-filter: blur(14px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .glass-button {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
+  }
+
+  .glass-button-primary {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 3px 12px rgba(6, 182, 212, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+  }
+
+  .glass-input {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+}
+
+.glass-text-title {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.03em;
+}
+
+.glass-text-glow {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.6), 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* ==========================================================================
+   Smooth Scroll Reveal Animation System (Intersection Observer Powered)
+   ========================================================================== */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  will-change: auto;
+}
+
+/* Reduced motion preference for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ==========================================================================
+   Mobile & Responsive Utility Classes
+   ========================================================================== */
+
+/* Hide scrollbar while maintaining touch scroll */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile Touch Scroll Optimization */
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+/* iOS Safe Area Inset Helpers */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pl-safe {
+  padding-left: env(safe-area-inset-left, 0px);
+}
+.pr-safe {
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Mobile Bottom Sheet Animation */
+@keyframes slideUpDrawer {
+  from {
+    transform: translateY(100%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUpDrawer 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Mobile fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+

@@ -1,0 +1,1250 @@
+{
+  "type": "FeatureCollection",
+  "name": "mumbai_authentic_road_network",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_WEH_01",
+        "road_name": "Western Express Highway (Bandra to Santacruz)",
+        "ward": "H/E",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 4.5,
+        "width_m": 35.0,
+        "elevation_m": 5.2,
+        "pavement_condition_index": 72
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.845,
+            19.055
+          ],
+          [
+            72.8465,
+            19.062
+          ],
+          [
+            72.848,
+            19.069
+          ],
+          [
+            72.85,
+            19.078
+          ],
+          [
+            72.852,
+            19.088
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_WEH_02",
+        "road_name": "Western Express Highway (Santacruz to Andheri Flyover)",
+        "ward": "K/E",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 5.2,
+        "width_m": 35.0,
+        "elevation_m": 6.8,
+        "pavement_condition_index": 68
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.852,
+            19.088
+          ],
+          [
+            72.854,
+            19.098
+          ],
+          [
+            72.856,
+            19.108
+          ],
+          [
+            72.858,
+            19.12
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_WEH_03",
+        "road_name": "Western Express Highway (Andheri to Goregaon Hub)",
+        "ward": "P/S",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 4.8,
+        "width_m": 35.0,
+        "elevation_m": 7.5,
+        "pavement_condition_index": 65
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.858,
+            19.12
+          ],
+          [
+            72.859,
+            19.13
+          ],
+          [
+            72.86,
+            19.141
+          ],
+          [
+            72.86,
+            19.152
+          ],
+          [
+            72.86,
+            19.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_WEH_04",
+        "road_name": "Western Express Highway (Goregaon to Borivali National Park)",
+        "ward": "R/C",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 6.5,
+        "width_m": 35.0,
+        "elevation_m": 8.2,
+        "pavement_condition_index": 88
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.86,
+            19.162
+          ],
+          [
+            72.8605,
+            19.175
+          ],
+          [
+            72.8615,
+            19.188
+          ],
+          [
+            72.863,
+            19.205
+          ],
+          [
+            72.8645,
+            19.218
+          ],
+          [
+            72.865,
+            19.225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_WEH_05",
+        "road_name": "Western Express Highway (Borivali to Dahisar Toll Naka)",
+        "ward": "R/N",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 4.0,
+        "width_m": 35.0,
+        "elevation_m": 5.0,
+        "pavement_condition_index": 84
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.865,
+            19.225
+          ],
+          [
+            72.867,
+            19.24
+          ],
+          [
+            72.87,
+            19.255
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SVR_01",
+        "road_name": "Swami Vivekanand (SV) Road (Bandra Lucky Jn to Khar)",
+        "ward": "H/W",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 3.2,
+        "width_m": 24.0,
+        "elevation_m": 3.8,
+        "pavement_condition_index": 52
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.836,
+            19.055
+          ],
+          [
+            72.8368,
+            19.062
+          ],
+          [
+            72.8375,
+            19.07
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SVR_02",
+        "road_name": "SV Road (Santacruz Milan Subway Approach)",
+        "ward": "H/W",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 2.1,
+        "width_m": 22.0,
+        "elevation_m": 2.2,
+        "pavement_condition_index": 44
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8375,
+            19.07
+          ],
+          [
+            72.8385,
+            19.0832
+          ],
+          [
+            72.8382,
+            19.092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SVR_03",
+        "road_name": "SV Road (Vile Parle to Andheri Station West)",
+        "ward": "K/W",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 3.5,
+        "width_m": 24.0,
+        "elevation_m": 3.1,
+        "pavement_condition_index": 58
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8382,
+            19.092
+          ],
+          [
+            72.838,
+            19.105
+          ],
+          [
+            72.84,
+            19.1194
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SVR_04",
+        "road_name": "SV Road (Andheri Subway Section to Jogeshwari)",
+        "ward": "K/W",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 3.0,
+        "width_m": 22.0,
+        "elevation_m": 1.9,
+        "pavement_condition_index": 39
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.84,
+            19.1194
+          ],
+          [
+            72.841,
+            19.13
+          ],
+          [
+            72.842,
+            19.14
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SVR_05",
+        "road_name": "SV Road (Goregaon to Malad Subway Jn)",
+        "ward": "P/N",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 4.2,
+        "width_m": 24.0,
+        "elevation_m": 3.4,
+        "pavement_condition_index": 48
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.842,
+            19.14
+          ],
+          [
+            72.843,
+            19.155
+          ],
+          [
+            72.8438,
+            19.168
+          ],
+          [
+            72.845,
+            19.185
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SVR_06",
+        "road_name": "SV Road (Kandivali to Borivali Station West)",
+        "ward": "R/C",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 4.6,
+        "width_m": 24.0,
+        "elevation_m": 5.5,
+        "pavement_condition_index": 82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.845,
+            19.185
+          ],
+          [
+            72.848,
+            19.205
+          ],
+          [
+            72.852,
+            19.228
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LNK_01",
+        "road_name": "New Link Road (Bandra West to Khar Danda)",
+        "ward": "H/W",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 2.8,
+        "width_m": 30.0,
+        "elevation_m": 3.5,
+        "pavement_condition_index": 86
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.825,
+            19.05
+          ],
+          [
+            72.828,
+            19.07
+          ],
+          [
+            72.829,
+            19.082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LNK_02",
+        "road_name": "New Link Road (Juhu Circle to Andheri Infinity Mall)",
+        "ward": "K/W",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 4.1,
+        "width_m": 30.0,
+        "elevation_m": 3.2,
+        "pavement_condition_index": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.829,
+            19.082
+          ],
+          [
+            72.83,
+            19.11
+          ],
+          [
+            72.831,
+            19.135
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LNK_03",
+        "road_name": "New Link Road (Oshiwara to Goregaon West / Bangur Nagar)",
+        "ward": "P/S",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 3.6,
+        "width_m": 30.0,
+        "elevation_m": 3.8,
+        "pavement_condition_index": 84
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.831,
+            19.135
+          ],
+          [
+            72.8325,
+            19.152
+          ],
+          [
+            72.8335,
+            19.165
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LNK_04",
+        "road_name": "New Link Road (Malad Inorbit to Mith Chowki)",
+        "ward": "P/N",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 3.2,
+        "width_m": 30.0,
+        "elevation_m": 4.1,
+        "pavement_condition_index": 78
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8335,
+            19.165
+          ],
+          [
+            72.8345,
+            19.178
+          ],
+          [
+            72.8355,
+            19.192
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LNK_05",
+        "road_name": "New Link Road (Kandivali to Dahisar Link Road Extension)",
+        "ward": "R/N",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 5.8,
+        "width_m": 30.0,
+        "elevation_m": 4.5,
+        "pavement_condition_index": 85
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8355,
+            19.192
+          ],
+          [
+            72.84,
+            19.215
+          ],
+          [
+            72.845,
+            19.235
+          ],
+          [
+            72.848,
+            19.25
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_EEH_01",
+        "road_name": "Eastern Express Highway (Sion Circle to Priyadarshini Park)",
+        "ward": "F/N",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 3.8,
+        "width_m": 36.0,
+        "elevation_m": 2.3,
+        "pavement_condition_index": 62
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.862,
+            19.04
+          ],
+          [
+            72.868,
+            19.048
+          ],
+          [
+            72.872,
+            19.055
+          ],
+          [
+            72.88,
+            19.062
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_EEH_02",
+        "road_name": "Eastern Express Highway (Kurla Amar Mahal to Ghatkopar)",
+        "ward": "L",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 4.5,
+        "width_m": 36.0,
+        "elevation_m": 3.5,
+        "pavement_condition_index": 70
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.88,
+            19.062
+          ],
+          [
+            72.888,
+            19.07
+          ],
+          [
+            72.898,
+            19.082
+          ],
+          [
+            72.905,
+            19.095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_EEH_03",
+        "road_name": "Eastern Express Highway (Ghatkopar to Vikhroli / Godrej)",
+        "ward": "N",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 4.2,
+        "width_m": 36.0,
+        "elevation_m": 5.8,
+        "pavement_condition_index": 89
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.905,
+            19.095
+          ],
+          [
+            72.915,
+            19.108
+          ],
+          [
+            72.925,
+            19.125
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_EEH_04",
+        "road_name": "Eastern Express Highway (Vikhroli to Bhandup / Mulund Toll)",
+        "ward": "T",
+        "road_type": "Expressway",
+        "lanes": 8,
+        "length_km": 6.8,
+        "width_m": 36.0,
+        "elevation_m": 8.0,
+        "pavement_condition_index": 91
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.925,
+            19.125
+          ],
+          [
+            72.935,
+            19.138
+          ],
+          [
+            72.948,
+            19.155
+          ],
+          [
+            72.962,
+            19.178
+          ],
+          [
+            72.968,
+            19.19
+          ],
+          [
+            72.975,
+            19.205
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LBS_01",
+        "road_name": "Lal Bahadur Shastri (LBS) Marg (Sion to Kurla Kamani)",
+        "ward": "L",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 3.9,
+        "width_m": 22.0,
+        "elevation_m": 2.2,
+        "pavement_condition_index": 38
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.865,
+            19.04
+          ],
+          [
+            72.875,
+            19.055
+          ],
+          [
+            72.88,
+            19.07
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LBS_02",
+        "road_name": "LBS Marg (Kurla to Ghatkopar Gandhi Nagar)",
+        "ward": "N",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 4.1,
+        "width_m": 22.0,
+        "elevation_m": 3.8,
+        "pavement_condition_index": 46
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.88,
+            19.07
+          ],
+          [
+            72.89,
+            19.085
+          ],
+          [
+            72.905,
+            19.098
+          ],
+          [
+            72.91,
+            19.105
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LBS_03",
+        "road_name": "LBS Marg (Ghatkopar to Vikhroli / Kanjurmarg)",
+        "ward": "S",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 4.5,
+        "width_m": 24.0,
+        "elevation_m": 6.2,
+        "pavement_condition_index": 75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.91,
+            19.105
+          ],
+          [
+            72.925,
+            19.12
+          ],
+          [
+            72.935,
+            19.138
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_LBS_04",
+        "road_name": "LBS Marg (Bhandup to Mulund Check Naka)",
+        "ward": "T",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 4.8,
+        "width_m": 24.0,
+        "elevation_m": 9.5,
+        "pavement_condition_index": 81
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.935,
+            19.138
+          ],
+          [
+            72.945,
+            19.158
+          ],
+          [
+            72.955,
+            19.185
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_JVL_01",
+        "road_name": "Jogeshwari-Vikhroli Link Road (JVLR - WEH to Powai)",
+        "ward": "K/E",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 5.4,
+        "width_m": 32.0,
+        "elevation_m": 12.5,
+        "pavement_condition_index": 74
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.858,
+            19.135
+          ],
+          [
+            72.868,
+            19.133
+          ],
+          [
+            72.878,
+            19.131
+          ],
+          [
+            72.895,
+            19.128
+          ],
+          [
+            72.905,
+            19.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_JVL_02",
+        "road_name": "JVLR (Powai Lake to EEH Kanjurmarg Jn)",
+        "ward": "S",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 4.2,
+        "width_m": 32.0,
+        "elevation_m": 10.0,
+        "pavement_condition_index": 85
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.905,
+            19.126
+          ],
+          [
+            72.918,
+            19.128
+          ],
+          [
+            72.935,
+            19.13
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SCL_01",
+        "road_name": "Santacruz-Chembur Link Road (SCLR - Kurla to Amar Mahal)",
+        "ward": "L",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 4.8,
+        "width_m": 30.0,
+        "elevation_m": 4.2,
+        "pavement_condition_index": 87
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.855,
+            19.075
+          ],
+          [
+            72.875,
+            19.07
+          ],
+          [
+            72.89,
+            19.068
+          ],
+          [
+            72.902,
+            19.066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SCL_02",
+        "road_name": "BKC Connector & Extension Road",
+        "ward": "H/E",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 2.6,
+        "width_m": 26.0,
+        "elevation_m": 3.8,
+        "pavement_condition_index": 90
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.855,
+            19.06
+          ],
+          [
+            72.868,
+            19.066
+          ],
+          [
+            72.878,
+            19.064
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_AMB_01",
+        "road_name": "Dr. Babasaheb Ambedkar Road (Byculla to Dadar TT)",
+        "ward": "F/S",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 4.2,
+        "width_m": 30.0,
+        "elevation_m": 2.5,
+        "pavement_condition_index": 83
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.833,
+            18.975
+          ],
+          [
+            72.838,
+            18.995
+          ],
+          [
+            72.8432,
+            19.0125
+          ],
+          [
+            72.848,
+            19.025
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_AMB_02",
+        "road_name": "Dr Ambedkar Road (Dadar TT to Sion Circle / Gandhi Market)",
+        "ward": "F/N",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 3.1,
+        "width_m": 30.0,
+        "elevation_m": 1.9,
+        "pavement_condition_index": 42
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.848,
+            19.025
+          ],
+          [
+            72.855,
+            19.035
+          ],
+          [
+            72.862,
+            19.045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_SNB_01",
+        "road_name": "Senapati Bapat Marg (Mahalakshmi to Dadar West)",
+        "ward": "G/S",
+        "road_type": "Major Arterial",
+        "lanes": 4,
+        "length_km": 4.8,
+        "width_m": 24.0,
+        "elevation_m": 2.8,
+        "pavement_condition_index": 79
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.825,
+            18.985
+          ],
+          [
+            72.83,
+            19.002
+          ],
+          [
+            72.838,
+            19.022
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_MDR_01",
+        "road_name": "Marine Drive / Netaji Subhash Chandra Bose Road",
+        "ward": "A",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 3.6,
+        "width_m": 28.0,
+        "elevation_m": 3.8,
+        "pavement_condition_index": 92
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.822,
+            18.925
+          ],
+          [
+            72.8235,
+            18.935
+          ],
+          [
+            72.824,
+            18.942
+          ],
+          [
+            72.821,
+            18.95
+          ],
+          [
+            72.818,
+            18.955
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_EFR_01",
+        "road_name": "Eastern Freeway (Orange Gate to Chembur Panjrapol)",
+        "ward": "M/W",
+        "road_type": "Elevated Expressway",
+        "lanes": 4,
+        "length_km": 16.8,
+        "width_m": 18.0,
+        "elevation_m": 14.5,
+        "pavement_condition_index": 86
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.842,
+            18.95
+          ],
+          [
+            72.848,
+            18.97
+          ],
+          [
+            72.855,
+            18.99
+          ],
+          [
+            72.875,
+            19.02
+          ],
+          [
+            72.905,
+            19.055
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_CST_01",
+        "road_name": "Mumbai Coastal Road & Bandra-Worli Sea Link",
+        "ward": "D",
+        "road_type": "Expressway / Sea Link",
+        "lanes": 8,
+        "length_km": 10.5,
+        "width_m": 34.0,
+        "elevation_m": 4.0,
+        "pavement_condition_index": 96
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.818,
+            18.948
+          ],
+          [
+            72.805,
+            18.96
+          ],
+          [
+            72.81,
+            18.98
+          ],
+          [
+            72.815,
+            19.01
+          ],
+          [
+            72.825,
+            19.03
+          ],
+          [
+            72.835,
+            19.045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_TMC_MBR_01",
+        "road_name": "Old Mumbai-Pune Highway (Kalwa to Mumbra & Shilphata)",
+        "ward": "TMC-1",
+        "road_type": "Major Arterial",
+        "lanes": 6,
+        "length_km": 7.5,
+        "width_m": 30.0,
+        "elevation_m": 4.8,
+        "pavement_condition_index": 75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.97,
+            19.22
+          ],
+          [
+            72.995,
+            19.21
+          ],
+          [
+            73.0165,
+            19.1995
+          ],
+          [
+            73.0229,
+            19.1906
+          ],
+          [
+            73.0298,
+            19.1764
+          ],
+          [
+            73.045,
+            19.15
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD_TMC_MBR_02",
+        "road_name": "Mumbra Bypass Road (Elevated Parsik Tunnel Corridor)",
+        "ward": "TMC-1",
+        "road_type": "Elevated Bypass",
+        "lanes": 4,
+        "length_km": 6.8,
+        "width_m": 28.0,
+        "elevation_m": 16.5,
+        "pavement_condition_index": 82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.99,
+            19.205
+          ],
+          [
+            73.008,
+            19.198
+          ],
+          [
+            73.018,
+            19.185
+          ],
+          [
+            73.032,
+            19.168
+          ],
+          [
+            73.04,
+            19.152
+          ]
+        ]
+      }
+    }
+  ]
+}
